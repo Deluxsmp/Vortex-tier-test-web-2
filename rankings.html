@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Vortex Tier — Rankings</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body class="rankings-page">
+<header class="nav"><a class="logo" href="index.html">VORTEX TIER</a><div class="navlinks"><a href="index.html">Home</a><a class="active" href="rankings.html">Rankings</a><a href="https://discord.com" target="_blank">Discord</a></div></header>
+<main class="rank-wrap">
+  <div class="rank-top"><div class="rank-title"><h1>Player Rankings</h1><p>Competitive Minecraft PvP leaderboard</p></div><div class="server"><i></i> mc.vortextier.net</div></div>
+  <div id="modes" class="modes"></div>
+  <div class="rank-tools"><input id="search" class="search" placeholder="Search player..." type="search"><button id="info" class="info">ⓘ Information</button></div>
+  <div class="overall-head"><span>#</span><span>Player</span><span>Region</span><span>Rankings</span></div>
+  <div id="list"></div>
+</main>
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="x" id="close">×</button><h3>Vortex Tier Rankings</h3><p>Players are placed into tiers after an official test by an approved tester. Select a gamemode above to view that leaderboard. Search works instantly across the selected mode.</p></div></div>
+<script src="app.js"></script></body></html>
