@@ -6,14 +6,14 @@
 =============================================================== */
 const ICON_URLS = {
   overall: "",
-  vanilla: "",
-  uhc: "",
-  pot: "",
-  nethop: "",
-  smp: "",
-  sword: "",
-  axe: "",
-  mace: ""
+  vanilla: "https://postimg.cc/qtqRWvg2",
+  uhc: "https://postimg.cc/RqLW3yrc",
+  pot: "https://i.postimg.cc/sXG1PvdS/pot.png",
+  nethop: "https://postimg.cc/0b9Jcxd9",
+  smp: "https://postimg.cc/dLXZvdP4",
+  sword: "https://postimg.cc/YjCH3sGY",
+  axe: "https://postimg.cc/t145fW3y",
+  mace: "https://postimg.cc/qNsJYCkL"
 };
 
 const modes=[
