@@ -5,7 +5,7 @@
    Leave url empty to use the emoji fallback.
 =============================================================== */
 const ICON_URLS = {
-  overall: "",
+  overall: "https://mctiers.com/tier_icons/overall.svg",
   vanilla: "https://postimg.cc/qtqRWvg2",
   uhc: "https://postimg.cc/RqLW3yrc",
   pot: "https://i.postimg.cc/sXG1PvdS/pot.png",
