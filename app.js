@@ -5,15 +5,15 @@
    Leave url empty to use the emoji fallback.
 =============================================================== */
 const ICON_URLS = {
-  overall: "",
-  vanilla: "",
-  uhc: "",
-  pot: "",
-  nethop: "",
-  smp: "",
-  sword: "",
-  axe: "",
-  mace: ""
+  overall: "https://mctiers.com/tier_icons/overall.svg",
+  vanilla: "https://mctiers.com/tier_icons/vanilla.svg",
+  uhc: "https://mctiers.com/tier_icons/uhc.svg",
+  pot: "https://mctiers.com/tier_icons/pot.svg",
+  nethop: "https://mctiers.com/tier_icons/nethop.svg",
+  smp: "https://mctiers.com/tier_icons/smp.svg",
+  sword: "https://mctiers.com/tier_icons/sword.svg",
+  axe: "https://mctiers.com/tier_icons/axe.svg",
+  mace: "https://mctiers.com/tier_icons/mace.svg"
 };
 
 const modes=[
