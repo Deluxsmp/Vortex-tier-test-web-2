@@ -1,0 +1,8 @@
+{
+  "modes": [
+    {"id":"overall","n":"Overall","i":"🏆"},{"id":"vanilla","n":"Vanilla","i":"🟪"},{"id":"uhc","n":"UHC","i":"❤️"},{"id":"pot","n":"Pot","i":"🧪"},{"id":"nethop","n":"NetHop","i":"🟣"},{"id":"smp","n":"SMP","i":"🟢"},{"id":"sword","n":"Sword","i":"🗡️"},{"id":"axe","n":"Axe","i":"🪓"},{"id":"mace","n":"Mace","i":"🔨"}
+  ],
+  "icons": {},
+  "site": {"siteName":"Vortex Tier","discordUrl":"https://discord.com","serverIp":"mc.vortextier.net"},
+  "players": []
+}
