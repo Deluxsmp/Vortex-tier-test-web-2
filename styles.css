@@ -1,0 +1,376 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#080d18;color:#e9edf6;font-family:Inter,Arial,sans-serif}
+.nav{height:66px;position:sticky;top:0;z-index:50;background:rgba(5,9,17,.96);border-bottom:1px solid #182233;display:flex;align-items:center;justify-content:space-between;padding:0 42px;backdrop-filter:blur(14px)}
+.logo{color:#ffd21a;text-decoration:none;font-weight:800;font-size:15px;letter-spacing:.4px}
+.navlinks{display:flex;gap:28px}.navlinks a{font-size:11px;font-weight:600;color:#7e899d;text-decoration:none}.navlinks a:hover,.navlinks a.active{color:#fff}
+
+.home-hero{min-height:calc(100vh - 66px);display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:80px 20px 100px;background:radial-gradient(circle at 50% 48%,#141c31 0,#0b111f 38%,#080d18 72%)}
+.live{font-size:10px;font-weight:700;color:#aeb8cb;border:1px solid #292d67;background:#171a3a;border-radius:30px;padding:8px 14px;box-shadow:0 0 28px #4b43ff1d}.live i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#1ddd7d;box-shadow:0 0 10px #1ddd7d;margin-right:7px}
+.home-hero h1{font-size:clamp(44px,7vw,78px);line-height:1.03;letter-spacing:-3px;margin:26px 0 20px}.home-hero h1 b{color:#ffc914;text-shadow:0 0 22px #ffc40033}.home-hero p{max-width:650px;color:#7d889d;font-size:13px;line-height:1.7;margin:0}.actions{display:flex;gap:10px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:9px;text-decoration:none;font-size:11px;font-weight:700;transition:.2s}.btn:hover{transform:translateY(-2px)}.purple{background:linear-gradient(135deg,#695cff,#4d40e8);color:white;box-shadow:0 8px 28px #574aff3a}.dark{background:#0c121e;color:#e4e8f1;border:1px solid #202a3a}
+footer{text-align:center;padding:25px;color:#4f5c70;font-size:10px;border-top:1px solid #121d2c}
+
+.rankings-page{background:#0b121e}.rank-wrap{max-width:1280px;margin:auto;padding:24px 18px 70px}.rank-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.rank-title h1{font-size:25px;margin:0}.rank-title p{font-size:11px;color:#66748a;margin:7px 0 0}.server{font-size:10px;color:#a9b3c3;background:#121a27;border:1px solid #202b3e;border-radius:7px;padding:8px 11px}.server i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#25db7d;margin-right:5px}
+
+.modes{display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid #1b2738;padding-bottom:0}.modes::-webkit-scrollbar{display:none}
+.mode{flex:0 0 102px;height:76px;border:1px solid #172333;background:#0c1420;border-radius:10px 10px 0 0;color:#69758a;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;cursor:pointer;font:800 11px Inter}.mode .ico{font-size:25px}.mode.active{color:#fff;border-bottom:2px solid #aab3c0;background:#111a29}
+
+.rank-tools{display:flex;justify-content:flex-end;gap:8px;margin:10px 0}.search{width:230px;height:38px;border-radius:8px;border:1px solid #202b3d;background:#101825;color:white;padding:0 12px;outline:none;font:11px Inter}.info{height:38px;border:1px solid #202b3d;background:#151d2a;color:#bac3d0;border-radius:8px;padding:0 12px;font:700 10px Inter;cursor:pointer}
+
+.overall-head{display:grid;grid-template-columns:52px 1fr 82px 410px;gap:12px;align-items:center;padding:9px 13px;color:#4e5b70;font-size:9px;text-transform:uppercase;font-weight:800;border:1px solid #172336;background:#0e1623;border-radius:7px 7px 0 0}
+.player-row{display:grid;grid-template-columns:58px 1fr 82px 410px;gap:14px;align-items:center;min-height:88px;padding:7px 13px;border:1px solid #172336;border-top:0;background:linear-gradient(90deg,#101925 0%,#121c2a 74%,#0e1723 100%);position:relative;overflow:hidden}.player-row:after{content:"";position:absolute;right:5px;top:0;bottom:0;width:34%;background:linear-gradient(125deg,transparent 0 38%,rgba(64,86,112,.30) 39% 43%,transparent 44% 51%,rgba(54,75,99,.46) 52% 57%,transparent 58% 66%,rgba(45,64,86,.32) 67% 72%,transparent 73%);opacity:.85;pointer-events:none}.player-row:hover{background:#141f2f}
+.pos{font-size:22px;font-weight:800;font-style:italic;color:#e8edf5}.p-main{display:flex;align-items:center;gap:14px;min-width:0;position:relative;z-index:1}.skin{width:74px;height:92px;object-fit:contain;object-position:center top;border-radius:6px;background:transparent;padding:0;display:block;filter:drop-shadow(0 5px 8px rgba(0,0,0,.75));transform:scale(1.18);transform-origin:center bottom}.p-name{font-size:15px;font-weight:800;color:#dce3ee;position:relative;z-index:1}.p-title{font-size:9px;color:#68768c;margin-top:4px}.region{justify-self:center;position:relative;z-index:2;font-size:10px;font-weight:800;border-radius:5px;padding:8px 9px;background:#182333;color:#aeb8c8}.region.na{background:#4a1f2c;color:#ff647c}.region.eu{background:#173c29;color:#55d98c}.region.me{background:#4b421a;color:#e7d34b}
+.mini-tiers{display:flex;position:relative;z-index:2;gap:8px;justify-content:flex-start;overflow:hidden}.mini{width:43px;flex:0 0 43px;text-align:center}.mini-icon{width:34px;height:34px;border-radius:50%;margin:auto;display:grid;place-items:center;background:#101725;border:2px solid #28384e;font-size:14px}.mini-label{display:inline-block;font-size:13px;font-weight:800;margin-top:3px;padding:2px 4px;border-radius:4px}.ht1{color:#ffd83f;background:#473b1b}.lt1{color:#e8c84a;background:#493b20}.ht2{color:#bfc9d8;background:#343d4d}.lt2{color:#aeb9c9;background:#303a49}.ht3{color:#ff9c51;background:#4a3021}.lt3{color:#e58a49;background:#483021}
+
+.mode-board{display:flex;gap:8px;overflow-x:auto;padding:5px 0 18px;align-items:flex-start;scroll-snap-type:x proximity}.mode-board::-webkit-scrollbar{height:5px}.tier-column{min-width:176px;flex:1;background:#101925;border:1px solid #172336;border-radius:0 0 7px 7px;overflow:hidden;scroll-snap-align:start}.tier-head{height:40px;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:800;border-bottom:1px solid #27354a}.tier-head span{margin-right:7px}.tier-1 .tier-head{background:#4b3917;color:#ffd35a}.tier-2 .tier-head{background:#343b49;color:#cbd2dc}.tier-3 .tier-head{background:#4b3020;color:#e58b48}.tier-4 .tier-head,.tier-5 .tier-head{background:#202a39;color:#c5cfdd}
+.tier-list{min-height:55px}.tier-player{height:62px;display:flex;align-items:center;gap:8px;padding:0 8px;border-bottom:1px solid #1c293a;position:relative;white-space:nowrap;overflow:hidden;background:linear-gradient(90deg,#182333 0%,#172232 72%,#101925 100%)}.tier-player:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:#42db8c}.tier-player:after{content:"";position:absolute;right:0;top:0;bottom:0;width:28%;background:linear-gradient(125deg,transparent 0 48%,#26364b 49% 53%,transparent 54%);opacity:.65;pointer-events:none}.tier-player img{width:52px;height:64px;object-fit:contain;object-position:center top;border-radius:4px;padding:0;background:transparent;flex:0 0 52px;position:relative;z-index:1;filter:drop-shadow(0 4px 7px rgba(0,0,0,.7));transform:scale(1.08);transform-origin:center bottom}.tier-player .name{font-size:14px;font-weight:700;color:#dce2ec;overflow:hidden;text-overflow:ellipsis;position:relative;z-index:1}.tier-player .up{margin-left:auto;color:#58708f;font-size:17px;position:relative;z-index:1}.emptyrow{text-align:center;padding:40px;color:#65738a;border:1px solid #172336;background:#101925}
+
+.modal{position:fixed;inset:0;background:#02050bcc;display:grid;place-items:center;z-index:100}.modal.hidden{display:none}.modal-card{width:min(440px,calc(100% - 28px));background:#0e1724;border:1px solid #26354a;border-radius:14px;padding:25px;position:relative}.modal-card h3{margin:0 0 10px}.modal-card p{font-size:11px;color:#8190a5;line-height:1.7}.x{position:absolute;right:13px;top:8px;background:none;border:0;color:#8390a3;font-size:25px;cursor:pointer}
+
+@media(max-width:800px){.nav{padding:0 18px}.rank-wrap{padding:15px 8px 60px}.server{display:none}.overall-head{grid-template-columns:40px 1fr 55px 355px}.player-row{grid-template-columns:40px 1fr 55px 355px;min-height:92px}.p-name{font-size:13px}.skin{width:82px;height:88px}.rankings-page .navlinks{gap:14px}.home-hero h1{letter-spacing:-2px}.tier-column{min-width:0;flex:0 0 calc((100vw - 32px)/3)}.tier-player{height:62px;padding:0 7px;gap:6px}.tier-player img{width:54px;height:60px;flex-basis:54px}}
+@media(max-width:520px){.rank-title h1{font-size:20px}.search{width:170px}.mode{flex-basis:92px;height:72px}.overall-head{grid-template-columns:34px 1fr 50px 330px}.player-row{grid-template-columns:34px 1fr 50px 330px;min-height:88px;padding:7px 10px}.skin{width:82px;height:88px}.p-main{gap:10px}.p-name{font-size:12px}.pos{font-size:17px}.tier-column{min-width:0;flex-basis:calc((100vw - 32px)/3)}.tier-head{height:52px;font-size:18px}.tier-player{height:64px;padding:0 7px;gap:6px}.tier-player img{width:55px;height:62px;flex-basis:55px}.tier-player .name{font-size:13px}.tier-player .up{font-size:11px}}
+
+/* V6 visual tuning: upper-half Minecraft skin crops + larger mode/rank UI */
+.tier-player img,.skin{overflow:hidden;}
+.mini{min-width:42px}.mini-label{font-weight:900;line-height:1.05;padding:3px 5px;border-radius:6px;}
+@media(max-width:520px){.mode .ico{font-size:23px}.mode{font-size:10.5px}.mini-label{font-size:12px;padding:3px 5px}.tier-column{flex-basis:calc((100vw - 30px)/3)} }
+
+/* V8 skin presentation: show Minecraft body render like the reference, not a head/avatar. */
+.player-row{min-height:98px;padding-top:5px;padding-bottom:5px}
+.p-main{min-height:94px}
+.player-row:before{content:"";position:absolute;left:0;top:0;bottom:0;width:36%;background:linear-gradient(110deg,rgba(33,48,67,.18),transparent 70%);clip-path:polygon(0 0,72% 0,100% 100%,0 100%);pointer-events:none}
+@media(max-width:800px){.player-row{min-height:98px}.skin{width:74px;height:94px}}
+@media(max-width:520px){.player-row{min-height:94px}.skin{width:72px;height:92px;transform:scale(1.12)}}
+
+/* V10 — consistent full Minecraft body skins everywhere */
+.skin, .tier-player img {
+  object-fit: contain !important;
+  object-position: center bottom !important;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  display: block;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 5px 9px rgba(0,0,0,.82));
+}
+.skin {
+  width: 78px !important;
+  height: 96px !important;
+  transform: scale(1.22) !important;
+  transform-origin: center bottom !important;
+  margin: 0 2px 0 0;
+}
+.tier-player img {
+  width: 58px !important;
+  height: 66px !important;
+  flex: 0 0 58px !important;
+  transform: scale(1.12) !important;
+  transform-origin: center bottom !important;
+}
+.p-main { min-height: 96px; }
+.player-row { min-height: 100px; }
+@media(max-width:800px){
+  .skin{width:78px !important;height:96px !important}
+  .tier-player img{width:58px !important;height:66px !important;flex-basis:58px !important}
+}
+@media(max-width:520px){
+  .skin{width:76px !important;height:94px !important;transform:scale(1.18) !important}
+  .tier-player img{width:56px !important;height:64px !important;flex-basis:56px !important;transform:scale(1.08) !important}
+}
+
+/* V11 — crop body renders at the waist: head + torso only, no legs/feet */
+.skin, .tier-player img {
+  object-fit: cover !important;
+  object-position: center top !important;
+  clip-path: inset(0 0 36% 0);
+  transform: scale(1.22) !important;
+  transform-origin: center top !important;
+}
+.skin { width: 82px !important; height: 94px !important; }
+.tier-player img { width: 58px !important; height: 68px !important; }
+@media(max-width:520px){
+  .skin { width: 78px !important; height: 92px !important; }
+  .tier-player img { width: 56px !important; height: 66px !important; }
+}
+
+/* V12 — upper-body only + subtle lean toward the rank side */
+.skin,
+.tier-player img,
+.player-skin-full {
+  object-fit: cover !important;
+  object-position: center top !important;
+  clip-path: inset(0 0 35% 0 round 5px) !important;
+  transform: rotate(-9deg) scale(1.22) !important;
+  transform-origin: center bottom !important;
+  filter: drop-shadow(0 5px 9px rgba(0,0,0,.8));
+}
+
+/* Keep the skin visually centered after the lean */
+.p-main .skin { margin-left: 3px; margin-right: 3px; }
+.tier-player img { margin-left: 2px; margin-right: 2px; }
+
+@media (max-width: 800px){
+  .skin { transform: rotate(-9deg) scale(1.24) !important; }
+  .tier-player img { transform: rotate(-9deg) scale(1.18) !important; }
+}
+@media (max-width: 520px){
+  .skin { transform: rotate(-8deg) scale(1.20) !important; }
+  .tier-player img { transform: rotate(-8deg) scale(1.14) !important; }
+}
+
+
+/* V16 — Reference-style Minecraft character render.
+   Show head + BOTH arms + torso down to the waist area. Hide legs/feet.
+   The character is presented as a dimensional 3/4 render, with a subtle
+   directional turn instead of a simple flat rotation. */
+.skin-frame,
+.tier-skin-frame{
+  position:relative;
+  display:block;
+  flex:0 0 auto;
+  overflow:hidden;
+  background:transparent;
+  z-index:10;
+  perspective:700px;
+  transform-style:preserve-3d;
+}
+
+.skin-frame{
+  width:86px;
+  height:86px;
+  margin:0 2px;
+}
+.tier-skin-frame{
+  width:58px;
+  height:58px;
+  margin:0 1px;
+}
+
+/* Source body renders are square. Enlarge them so the frame becomes a
+   deliberate crop: head -> shoulders -> arms -> waist, never legs. */
+.skin-frame .skin,
+.tier-skin-frame img{
+  position:absolute;
+  left:50%;
+  top:0;
+  width:124px !important;
+  height:124px !important;
+  max-width:none;
+  object-fit:contain !important;
+  object-position:center top !important;
+  clip-path:none !important;
+  border:0 !important;
+  padding:0 !important;
+  margin:0 !important;
+  transform-origin:50% 24% !important;
+  transform:
+    translateX(-50%)
+    translateY(-2px)
+    perspective(700px)
+    rotateY(-20deg)
+    rotateX(2deg)
+    rotateZ(-1deg)
+    scale(1.06) !important;
+  filter:drop-shadow(0 7px 8px rgba(0,0,0,.82));
+  image-rendering:auto;
+}
+
+/* A little extra horizontal enlargement makes the arms feel wider and the
+   crop land around the waist rather than the chest. */
+.skin-frame .skin{
+  width:132px !important;
+  height:132px !important;
+  top:-1px;
+}
+.tier-skin-frame img{
+  width:88px !important;
+  height:88px !important;
+  top:0;
+  transform:
+    translateX(-50%)
+    translateY(-1px)
+    perspective(650px)
+    rotateY(-20deg)
+    rotateX(2deg)
+    rotateZ(-1deg)
+    scale(1.06) !important;
+}
+
+/* Soft grounding shadow, kept behind the character. */
+.skin-frame:after,
+.tier-skin-frame:after{
+  content:"";
+  position:absolute;
+  left:10%;
+  right:4%;
+  bottom:0;
+  height:12px;
+  background:radial-gradient(ellipse,rgba(0,0,0,.58),transparent 72%);
+  transform:skewX(-16deg);
+  pointer-events:none;
+  z-index:-1;
+}
+
+@media(max-width:800px){
+  .skin-frame{width:84px;height:86px}
+  .tier-skin-frame{width:58px;height:58px}
+  .skin-frame .skin{width:130px !important;height:130px !important}
+  .tier-skin-frame img{width:87px !important;height:87px !important}
+}
+@media(max-width:520px){
+  .skin-frame{width:80px;height:84px}
+  .tier-skin-frame{width:56px;height:57px}
+  .skin-frame .skin{width:128px !important;height:128px !important}
+  .tier-skin-frame img{width:85px !important;height:85px !important}
+}
+
+/* V14 — custom linked mode/category images. Every icon is locked to the same
+   visual box, so adding square, portrait, or landscape images won't resize
+   the tabs/cards. object-fit: contain keeps the whole image visible. */
+.mode .ico{
+  width:34px;height:34px;display:grid;place-items:center;position:relative;
+  flex:0 0 34px;overflow:hidden;border-radius:7px;
+}
+.mode .mode-icon-img{
+  width:100%;height:100%;display:block;object-fit:contain;object-position:center;
+  image-rendering:auto;filter:drop-shadow(0 2px 5px rgba(0,0,0,.55));
+}
+.mode .icon-fallback{font-size:25px;line-height:1;display:grid;place-items:center;width:100%;height:100%;}
+.mode .mode-icon-img + .icon-fallback{display:none;}
+.mini-icon{position:relative;overflow:hidden;}
+.mini-icon-img{
+  width:100%;height:100%;display:block;object-fit:contain;object-position:center;
+  border-radius:50%;image-rendering:auto;filter:drop-shadow(0 2px 4px rgba(0,0,0,.55));
+}
+.mini-icon .icon-fallback{font-size:16px;line-height:1;display:grid;place-items:center;width:100%;height:100%;}
+.mini-icon .mini-icon-img + .icon-fallback{display:none;}
+@media(max-width:520px){
+  .mode .ico{width:31px;height:31px;flex-basis:31px}
+  .mode .icon-fallback{font-size:23px}
+}
+
+/* V15 — linked icons are always rendered inside fixed frames; the artwork itself
+   is never stretched. Paste one direct image URL per mode in app.js ICON_URLS. */
+.mode .ico,
+.mini-icon{overflow:hidden;flex-shrink:0;}
+.mode .mode-icon-img,
+.mini-icon .mini-icon-img{display:block !important;visibility:visible !important;opacity:1 !important;}
+.mode .mode-icon-img{width:100% !important;height:100% !important;object-fit:contain !important;object-position:center !important;}
+.mini-icon .mini-icon-img{width:100% !important;height:100% !important;object-fit:contain !important;object-position:center !important;}
+
+
+/* V17 — use the Minecraft 3D body render itself for the character pose.
+   Do NOT rotate the raster image with CSS: the render already supplies the
+   3/4 perspective. The frame crops the lower body at the waist while keeping
+   the head, both arms and torso visible. */
+.skin-frame{
+  width:82px !important;
+  height:88px !important;
+  overflow:hidden !important;
+  perspective:none !important;
+  transform:none !important;
+}
+.tier-skin-frame{
+  width:58px !important;
+  height:61px !important;
+  overflow:hidden !important;
+  perspective:none !important;
+  transform:none !important;
+}
+.skin-frame .skin,
+.tier-skin-frame img{
+  position:absolute !important;
+  left:50% !important;
+  top:0 !important;
+  max-width:none !important;
+  width:142px !important;
+  height:142px !important;
+  object-fit:contain !important;
+  object-position:center top !important;
+  clip-path:none !important;
+  border:0 !important;
+  padding:0 !important;
+  margin:0 !important;
+  transform:translateX(-50%) !important;
+  transform-origin:center top !important;
+  filter:drop-shadow(0 6px 9px rgba(0,0,0,.82)) !important;
+}
+.tier-skin-frame img{
+  width:94px !important;
+  height:94px !important;
+}
+.skin-frame:after,
+.tier-skin-frame:after{
+  display:none !important;
+}
+@media(max-width:800px){
+  .skin-frame{width:80px !important;height:88px !important}
+  .skin-frame .skin{width:140px !important;height:140px !important}
+  .tier-skin-frame{width:57px !important;height:61px !important}
+  .tier-skin-frame img{width:93px !important;height:93px !important}
+}
+@media(max-width:520px){
+  .skin-frame{width:76px !important;height:84px !important}
+  .skin-frame .skin{width:134px !important;height:134px !important}
+  .tier-skin-frame{width:55px !important;height:59px !important}
+  .tier-skin-frame img{width:90px !important;height:90px !important}
+}
+
+
+/* V18 — reference-matched Minecraft BUST render.
+   Use a real 3D bust (head + torso + both arms) from the renderer instead of
+   cropping a full-body image or faking the pose with CSS rotation. */
+.skin-frame{
+  width:92px !important;
+  height:94px !important;
+  overflow:hidden !important;
+  display:block !important;
+  position:relative !important;
+  perspective:none !important;
+  transform:none !important;
+}
+.tier-skin-frame{
+  width:62px !important;
+  height:64px !important;
+  overflow:hidden !important;
+  display:block !important;
+  position:relative !important;
+  perspective:none !important;
+  transform:none !important;
+}
+.skin-frame .skin,
+.tier-skin-frame img{
+  position:absolute !important;
+  left:50% !important;
+  top:50% !important;
+  width:128px !important;
+  height:128px !important;
+  max-width:none !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  clip-path:none !important;
+  margin:0 !important;
+  padding:0 !important;
+  border:0 !important;
+  transform:translate(-50%,-50%) !important;
+  transform-origin:center center !important;
+  filter:drop-shadow(0 7px 9px rgba(0,0,0,.78)) !important;
+  image-rendering:auto !important;
+}
+.tier-skin-frame img{
+  width:86px !important;
+  height:86px !important;
+}
+@media(max-width:800px){
+  .skin-frame{width:90px !important;height:94px !important}
+  .skin-frame .skin{width:128px !important;height:128px !important}
+  .tier-skin-frame{width:60px !important;height:63px !important}
+  .tier-skin-frame img{width:84px !important;height:84px !important}
+}
+@media(max-width:520px){
+  .skin-frame{width:88px !important;height:92px !important}
+  .skin-frame .skin{width:126px !important;height:126px !important}
+  .tier-skin-frame{width:58px !important;height:61px !important}
+  .tier-skin-frame img{width:82px !important;height:82px !important}
+}
