@@ -6,7 +6,7 @@
 =============================================================== */
 const ICON_URLS = {
   overall: "https://mctiers.com/tier_icons/overall.svg",
-  vanilla: "https://postimg.cc/qtqRWvg2",
+  vanilla: "https://mctiers.com/tier_icons/vanilla.svg",
   uhc: "https://postimg.cc/RqLW3yrc",
   pot: "https://i.postimg.cc/sXG1PvdS/pot.png",
   nethop: "https://postimg.cc/0b9Jcxd9",
