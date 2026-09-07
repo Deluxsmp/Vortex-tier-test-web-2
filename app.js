@@ -7,13 +7,13 @@
 const ICON_URLS = {
   overall: "https://mctiers.com/tier_icons/overall.svg",
   vanilla: "https://mctiers.com/tier_icons/vanilla.svg",
-  uhc: "https://postimg.cc/RqLW3yrc",
-  pot: "https://i.postimg.cc/sXG1PvdS/pot.png",
-  nethop: "https://postimg.cc/0b9Jcxd9",
-  smp: "https://postimg.cc/dLXZvdP4",
-  sword: "https://postimg.cc/YjCH3sGY",
-  axe: "https://postimg.cc/t145fW3y",
-  mace: "https://postimg.cc/qNsJYCkL"
+  uhc: "https://mctiers.com/tier_icons/uhc.svg",
+  pot: "https://mctiers.com/tier_icons/pot.svg",
+  nethop: "https://mctiers.com/tier_icons/nethop.svg",
+  smp: "https://mctiers.com/tier_icons/smp.svg",
+  sword: "https://mctiers.com/tier_icons/sword.svg",
+  axe: "https://mctiers.com/tier_icons/axe.svg",
+  mace: "https://mctiers.com/tier_icons/mace.svg"
 };
 
 const modes=[
