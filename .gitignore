@@ -1,6 +1,0 @@
-node_modules/
-.env
-vortex.db
-*.db-shm
-*.db-wal
-.vercel/
